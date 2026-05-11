@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,10 +7,10 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #0A0A0A;
   color: #F7F5F0;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -21,18 +21,18 @@ h1, h2, h3, .logo {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 section {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 
 @media (max-width: 768px) {
   section {
-    padding: 3rem 0;
+    padding: 4rem 0;
   }
   .container {
     padding: 0 1.5rem;
@@ -136,7 +136,7 @@ html {
 
 /* button styles */
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* responsive images */

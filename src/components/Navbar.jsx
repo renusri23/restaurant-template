@@ -54,7 +54,7 @@ const Navbar = () => {
         gap: "2rem",
         alignItems: "center"
       }} className="desktop-menu">
-        {["Home", "About", "Menu", "Gallery", "Contact"].map((item) => (
+        {["Home", "About", "Menu", "Gallery", "Testimonials", "Contact"].map((item) => (
           <a
             key={item}
             onClick={() => scrollToSection(item.toLowerCase())}
@@ -112,7 +112,7 @@ const Navbar = () => {
           alignItems: "center",
           gap: "2rem"
         }}>
-          {["Home", "About", "Menu", "Gallery", "Contact"].map((item) => (
+          {["Home", "About", "Menu", "Gallery", "Testimonials", "Contact"].map((item) => (
             <a
               key={item}
               onClick={() => scrollToSection(item.toLowerCase())}

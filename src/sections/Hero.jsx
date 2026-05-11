@@ -46,7 +46,7 @@ const Hero = () => {
         <div style={{
           position: "absolute",
           inset: 0,
-          background: "linear-gradient(135deg, rgba(10,10,10,0.7) 0%, rgba(0,0,0,0.3) 100%)"
+          background: "linear-gradient(135deg, rgba(10,10,10,0.8) 0%, rgba(0,0,0,0.5) 100%)"
         }} />
         <div className="container" style={{ position: "relative", zIndex: 2, textAlign: "left" }}>
           <div className="reveal">
@@ -64,7 +64,7 @@ const Hero = () => {
             </div>
             <h1 className="hero-content" style={{
               fontSize: "clamp(3.5rem, 9vw, 6rem)",
-              marginBottom: "1rem",
+              marginBottom: "2rem",
               lineHeight: "1.1"
             }}>
               Crafted Coffee.<br />
@@ -75,7 +75,7 @@ const Hero = () => {
             <p className="hero-content" style={{
               fontSize: "1.2rem",
               maxWidth: "500px",
-              marginBottom: "2rem",
+              marginBottom: "3rem",
               opacity: 0.9,
               lineHeight: "1.6"
             }}>

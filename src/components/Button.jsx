@@ -1,15 +1,16 @@
 const Button = ({ children, variant = "primary", onClick, style = {} }) => {
   const baseStyle = {
-    padding: "0.75rem 2rem",
-    borderRadius: "9999px",
+    padding: "1rem 2.5rem",
+    borderRadius: "50px",
     fontWeight: "600",
     transition: "all 0.3s ease",
     cursor: "pointer",
     border: "none",
-    fontSize: "0.9rem",
-    letterSpacing: "0.3px",
+    fontSize: "1rem",
+    letterSpacing: "0.5px",
     display: "inline-block",
-    textAlign: "center"
+    textAlign: "center",
+    transform: "translateY(0)"
   };
 
   const variants = {
@@ -25,8 +26,8 @@ const Button = ({ children, variant = "primary", onClick, style = {} }) => {
   };
 
   const hoverStyle = variant === "primary" 
-    ? { background: "#D4B15C", transform: "scale(1.02)" }
-    : { background: "rgba(198,164,63,0.1)", transform: "scale(1.02)" };
+    ? { background: "#D4B15C", transform: "translateY(-3px) scale(1.05)", boxShadow: "0 10px 20px rgba(198,164,63,0.3)" }
+    : { background: "rgba(198,164,63,0.2)", transform: "translateY(-3px) scale(1.05)", boxShadow: "0 10px 20px rgba(198,164,63,0.2)" };
 
   return (
     <button
@@ -35,7 +36,7 @@ const Button = ({ children, variant = "primary", onClick, style = {} }) => {
         Object.assign(e.target.style, hoverStyle);
       }}
       onMouseLeave={(e) => {
-        Object.assign(e.target.style, variants[variant]);
+        Object.assign(e.target.style, variants[variant], { transform: "translateY(0) scale(1)", boxShadow: "none" });
       }}
       onClick={onClick}
     >
